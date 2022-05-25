@@ -42,16 +42,16 @@ actionSpeech = (speechText) => {
   console.log(speechText); // debug 
   switch(speechText){ 
     // switch evaluates using stric comparison, ===
-    case "black":
+    case "siyah":
       document.body.style.background = "#000000";
       document.body.style.color="#FFFFFF";
       break;
-    case  "reset":
+    case  "sifirla":
       document.body.style.background = "#ffe6ab";
       document.body.style.color="#000000";
       image1.classList.add("hide"); // hide image (if any)
       break;
-    case "image": // let op, "fall-through"
+    case "fotoraf": // let op, "fall-through"
     case "caroline": // let op, "fall-through"
       image1.src = "./img/caroline.jpg";
       image1.style.width = "400px";
@@ -60,7 +60,7 @@ actionSpeech = (speechText) => {
     case "diger sayfa":
       window.open("");
       break;
-    case "help me":
+    case "yardim et":
       alert("Valid speech commands: black,  reset, next page");
           break;
       case "ahmet":
